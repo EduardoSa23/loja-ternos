@@ -1,0 +1,208 @@
+body {
+    font-family: "Playfair Display", serif;
+}
+
+.navbar {
+    background-color: #050d25;
+}
+
+header h1 {
+    color: #f2edf8;
+    font-weight: 700px;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #f2edf8;
+    color: #050d25;
+}
+
+#cabecalho .nav .nav-link {
+    color: #f2edf8;
+}
+
+.carousel-item img {
+    height: 750px;
+}
+
+.navbar-toggler {
+    background-color: #f2edf8;
+}
+
+#promocoes
+#sobre-a-loja {
+    background-color: #e4daf0;
+    color: #050d25;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: #050d25;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    left: 12px;
+}
+
+.card,
+.col-md-3 h5 {
+    color: #050d25;
+}
+
+.preco {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+.preco-anterior {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.size-options {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+.size-options .size {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px solid #050d25;
+    border-radius: 50%;
+    padding: 10px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.size-options .size:hover {
+    background-color:#050d25 ;
+    color: #f2edf8;
+}
+
+.size-options .size.active {
+    background-color: #050d25;
+    color: #f2edf8;
+    border-color: #888;
+}
+
+.card-img-top {
+    height: 550px;
+    object-fit: cover;
+}
+
+.btn-comprar {
+    background-color: #050d25;
+    color: #f2edf8;
+}
+
+.btn-comprar:hover {
+    background-color: #002854;
+    color: #f2edf8;
+}
+
+#produtos,
+#contato {
+    background-color: #f2edf8;
+}
+
+.tab-pane .card-img-top {
+    height: 400px;
+}
+
+#produtos h6,
+#promocoes h6 {
+    font-weight: bold;
+}
+
+.preco-normal {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#produtos .nav .nav-link.active {
+    background-color: #050d25;
+    color: #f2edf8;
+}
+
+#produtos .nav .nav-link {
+    color: #050d25;
+}
+
+#produtos .nav .nav-link:hover {
+    color: #f2edf8;
+    background-color: #002854;
+}
+
+#sobre-a-loja h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#sobre-a-loja h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #050d25;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #002854;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    h2::after {
+        content: '';
+        position: absolute;
+        width: 65%;
+        height: 4px;
+        background-color: #050d25;
+        left: 0;
+        bottom: -10px;
+        border-radius: 5px;
+        transition: width 0.3s ease;
+        left: 12px;
+    }
+}

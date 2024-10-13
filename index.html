@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Vitrual</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+            <div class="container">
+                <h1 class="fw-bold">Ternos de Grife</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex mt-2">
+                        <li class="nav-item fw-bold">
+                            <a href="#promocoes" class="nav-link active">
+                                <i class="bi bi-fire"></i>
+                                Promoções
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#produtos" class="nav-link">
+                                <i class="bi bi-handbag"></i>
+                                Produtos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#sobre-a-loja" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre a loja
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+            <section>
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="w-100" src="images/carousel/carousel1.jpg" alt="foto do espaço interno da loja">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="w-100" src="images/carousel/carousel2.avif" alt="foto do espaço interno da loja">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="w-100" src="images/carousel/carousel3.jpg" alt="foto do espaço interno da loja">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="w-100" src="images/carousel/carousel4.jpg" alt="foto do espaço interno da loja">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </section>
+            <section id="promocoes">
+                <div class="pt-4 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="text-center fw-bold mb-5">Promoções</h2>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <img src="images/socialMasculino/terno.jpg" class="card-img-top" alt="Homem de terno slin fit">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title fw-bold">Terno Slim Fit</h5>
+                                        <h6>Azul Marinho</h6>
+                                        <p class="card-text">Terno Slim Fit, confortável e elegante, ideal para todas as ocasiões.</p>
+                                        <div class="size-options mt-auto">
+                                            <button type="button" class="size">P</button>
+                                            <button type="button" class="size">M</button>
+                                            <button type="button" class="size">G</button>
+                                            <button type="button" class="size">GG</button>
+                                        </div>
+                                        <p class="mb-2">
+                                            <span class="preco-anterior">R$599,99</span>
+                                            <span class="preco">R$499,99</span>
+                                        </p>
+                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <img src="images/socialFeminino/socialFeminina2.jpg" class="card-img-top" alt="Mulher de terno">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title fw-bold">Conjunto Social Feminino</h5>
+                                        <h6>Cinza Claro</h6>
+                                        <p class="card-text">Conjunto social, confortável e elegante, ideal para todas as ocasiões.</p>
+                                        <div class="size-options mt-auto">
+                                            <button type="button" class="size">P</button>
+                                            <button type="button" class="size">M</button>
+                                            <button type="button" class="size">G</button>
+                                            <button type="button" class="size">GG</button>
+                                        </div>
+                                        <p class="mb-2">
+                                            <span class="preco-anterior">R$499,99</span>
+                                            <span class="preco">R$399,99</span>
+                                        </p>
+                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <img src="images/sapatoMasculino/sapato1.jpg" class="card-img-top" alt="Produto 1">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title fw-bold">Sapato Social</h5>
+                                        <h6>Marrom</h6>
+                                        <p class="card-text">Sapato social, confortável e elegante.</p>
+                                        <div class="size-options mt-auto">
+                                            <button type="button" class="size">39</button>
+                                            <button type="button" class="size">40</button>
+                                            <button type="button" class="size">41</button>
+                                            <button type="button" class="size">42</button>
+                                        </div>
+                                        <p class="mb-2">
+                                            <span class="preco-anterior">R$199,99</span>
+                                            <span class="preco">R$99,99</span>
+                                        </p>
+                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="produtos" class="pt-4 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center fw-bold mb-5">Produtos</h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#social-masculino" class="fw-bold text-start nav-link mb-1 active">Social Masculino</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#social-feminino" class="fw-bold text-start nav-link mb-1 ">Social Feminino</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#camiseta-casual-masculina" class="fw-bold text-start nav-link mb-1 ">Camiseta Casual Masculina</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#camiseta-casual-feminina" class="fw-bold text-start nav-link mb-1 ">Camiseta Casual Feminina</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#sapato-masculino" class="fw-bold text-start nav-link mb-1 ">Sapato Masculino</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#sapato-feminino" class="fw-bold text-start nav-link ">Sapato Feminino</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="social-masculino">
+                                    <div class="row">
+                                        <div class="col-md-4 d-flex">
+                                            <div class="card h-100">
+                                                <img src="images/socialMasculino/terno.jpg" class="card-img-top" alt="Produto 1">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title fw-bold">Terno Slin fit</h5>
+                                                    <h6>Azul Marinho</h6>
+                                                    <p class="card-text">Terno Slim Fit, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                    <div class="size-options mt-auto">
+                                                        <button type="button" class="size">P</button>
+                                                        <button type="button" class="size">M</button>
+                                                        <button type="button" class="size">G</button>
+                                                        <button type="button" class="size">GG</button>
+                                                    </div>
+                                                    <p class="mb-2">
+                                                        <span class="preco-anterior">R$599,99</span>
+                                                        <span class="preco">R$499,99</span>
+                                                    </p>
+                                                    <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/socialMasculino/terno2.jpg" class="card-img-top" alt="Produto 2">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Terno</h5>
+                                                        <h6>Azul bebê</h6>
+                                                        <p class="card-text">Terno, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$599,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/socialMasculino/terno3.jpg" class="card-img-top" alt="Produto 3">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Terno Slin fit</h5>
+                                                        <h6>Preto</h6>
+                                                        <p class="card-text">Terno Slim Fit, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$799,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="social-feminino">
+                                        <div class="row">
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/socialFeminino/socialFeminina2.jpg" class="card-img-top" alt="Produto 2">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Conjunto Social Feminino</h5>
+                                                        <h6>Cinza Claro</h6>
+                                                        <p class="card-text">Conjunto social, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-anterior">R$499,99</span>
+                                                            <span class="preco">R$399,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/socialFeminino/socialFeminina1.jpg" class="card-img-top border-bottom" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Conjunto Social Feminino</h5>
+                                                        <h6>Azul Marinho</h6>
+                                                        <p class="card-text">Conjunto social, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$599,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/socialFeminino/socialFeminina3.jpg" class="card-img-top" alt="Produto 3">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Terno Slin fit</h5>
+                                                        <h6>Preto</h6>
+                                                        <p class="card-text">Conjunto social, confortável e elegante, ideal para todas as ocasiões.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$499,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="camiseta-casual-masculina">
+                                        <div class="row">
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/camisaCasualMasculino/camisa1.jpg" class="card-img-top" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Camiseta Casual Masculina</h5>
+                                                        <h6>Branca</h6>
+                                                        <p class="card-text">Camiseta casual, tecido leve e agradável</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$49,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/camisaCasualMasculino/camiseta3.jpg" class="card-img-top" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Camiseta Casual Masculina</h5>
+                                                        <h6>Vermelha</h6>
+                                                        <p class="card-text">Camiseta casual, tecido leve e agradável</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$49,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="camiseta-casual-feminina">
+                                        <div class="row">
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/camisaCasualFeminino/camiseta2.jpg" class="card-img-top" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Camiseta Casual Feminina</h5>
+                                                        <h6>Verde Musgo</h6>
+                                                        <p class="card-text">Camiseta casual, tecido leve e agradável</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$49,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/camisaCasualFeminino/camiseta4.jpg" class="card-img-top" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Camiseta Casual Feminina</h5>
+                                                        <h6>Verde Claro</h6>
+                                                        <p class="card-text">Camiseta casual, tecido leve e agradável</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">P</button>
+                                                            <button type="button" class="size">M</button>
+                                                            <button type="button" class="size">G</button>
+                                                            <button type="button" class="size">GG</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$49,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sapato-masculino">
+                                        <div class="row">
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/sapatoMasculino/sapato1.jpg" class="card-img-top" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Sapato Social</h5>
+                                                        <h6>Marrom</h6>
+                                                        <p class="card-text">Sapato social, confortável e elegante.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">39</button>
+                                                            <button type="button" class="size">40</button>
+                                                            <button type="button" class="size">41</button>
+                                                            <button type="button" class="size">42</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-anterior">R$199,99</span>
+                                                            <span class="preco">R$99,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/sapatoMasculino/sapato2.png" class="card-img-top border-bottom" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Sapato Social</h5>
+                                                        <h6>Preto</h6>
+                                                        <p class="card-text">Sapato social, confortável e elegante.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">39</button>
+                                                            <button type="button" class="size">40</button>
+                                                            <button type="button" class="size">41</button>
+                                                            <button type="button" class="size">42</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$149,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sapato-feminino">
+                                        <div class="row">
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/sapatoFeminino/sapato3.jpg" class="card-img-top border-bottom" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Sapato Social Feminino com Salto Médio</h5>
+                                                        <h6>Preto</h6>
+                                                        <p class="card-text">Sapato social com salto médio, confortável e elegante.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">35</button>
+                                                            <button type="button" class="size">37</button>
+                                                            <button type="button" class="size">38</button>
+                                                            <button type="button" class="size">40</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$149,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 d-flex">
+                                                <div class="card h-100">
+                                                    <img src="images/sapatoFeminino/sapato4.jpg" class="card-img-top border-bottom" alt="Produto 1">
+                                                    <div class="card-body d-flex flex-column">
+                                                        <h5 class="card-title fw-bold">Sapato Social Feminino com Salto Alto</h5>
+                                                        <h6>Preto</h6>
+                                                        <p class="card-text">Sapato social com salto alto, confortável e elegante.</p>
+                                                        <div class="size-options mt-auto">
+                                                            <button type="button" class="size">39</button>
+                                                            <button type="button" class="size">40</button>
+                                                            <button type="button" class="size">41</button>
+                                                            <button type="button" class="size">42</button>
+                                                        </div>
+                                                        <p class="mb-2">
+                                                            <span class="preco-normal">R$199,99</span>
+                                                        </p>
+                                                        <button type="button" class="btn btn-comprar">Adcionar ao Carrinho</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre-a-loja" class="pt-4 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/carousel/loja-ternos-boschini-8.jpg" alt="loja de ternos" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2>Sobre a loja</h2>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptates, dolorem iure doloribus cupiditate magni excepturi quasi 
+                                doloremque possimus laudantium. Modi, recusandae. Eum at, laboriosam ipsa eaque eveniet obcaecati beatae.
+                            </p>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptates, dolorem iure doloribus cupiditate magni excepturi quasi 
+                                doloremque possimus laudantium. Modi, recusandae. Eum at, laboriosam ipsa eaque eveniet obcaecati beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contato" class="pt-4 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center fw-bold mb-5">Contato</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form id="form">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold">Seu nome:</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold">Seu email:</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold">Seu telefone:</label>
+                                    <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold">Sua mensagem:</label>
+                                    <textarea class="form-control" name="mensagem" id="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-comprar">Enviar</button>
+                            </form>
+                            
+                            </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua jQuery Nº12, Bairro Bootstrap - Poá - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/messages_pt_BR.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
